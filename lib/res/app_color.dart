@@ -23,6 +23,7 @@ class AppColors{
   static const Color verifiedUserColor = Color(0xFF55ACEE);
   static const Color likedColor = Color(0xFFDB7373);
   static const Color disLikedColor = Color(0xFFfc9b1b);
+  static const Color hintColor =Color(0xFF787878);
 
 
 

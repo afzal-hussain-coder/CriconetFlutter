@@ -1,3 +1,4 @@
+import 'package:criconet/res/app_color.dart';
 import 'package:criconet/utils/routes/routes.dart';
 import 'package:criconet/utils/routes/routes_name.dart';
 import 'package:device_preview/device_preview.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Criconet',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor),
         useMaterial3: true,
       ),
       initialRoute: RoutesName.splash,

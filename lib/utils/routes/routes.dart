@@ -1,4 +1,8 @@
 import 'package:criconet/utils/routes/routes_name.dart';
+import 'package:criconet/view/authScreen/forgot.dart';
+import 'package:criconet/view/authScreen/loginScreen.dart';
+import 'package:criconet/view/authScreen/selectplayer.dart';
+import 'package:criconet/view/authScreen/signup.dart';
 import 'package:criconet/view/splash.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +13,32 @@ class Routes {
     switch (settings.name) {
       case RoutesName.splash:
         return MaterialPageRoute(builder: (context) => SplashView());
+
+    case RoutesName.signUp:
+      return PageTransition(
+        child: const SignUpView(),
+        type: PageTransitionType.bottomToTop,
+        settings: settings,
+      );
+
+      case RoutesName.login:
+        return PageTransition(
+          child: LoginView(),
+          type: PageTransitionType.bottomToTop,
+          settings: settings,
+        );
+      case RoutesName.forgotPassword:
+        return PageTransition(
+          child: ForgotPasswordView(),
+          type: PageTransitionType.bottomToTop,
+          settings: settings,
+        );
+      case RoutesName.selectPlayer:
+        return PageTransition(
+          child: SelectPlayerView(),
+          type: PageTransitionType.bottomToTop,
+          settings: settings,
+        );
 
       // case RoutesName.loginScreen:
       //   return PageTransition(

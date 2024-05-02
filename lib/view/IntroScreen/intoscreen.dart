@@ -1,7 +1,9 @@
 import 'package:criconet/res/components/roundedbutton.dart';
+import 'package:criconet/utils/routes/routes_name.dart';
 import 'package:criconet/view/IntroScreen/animateddot.dart';
 import 'package:criconet/view/IntroScreen/onboardcontent.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({super.key});
@@ -60,7 +62,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
             RoundedButton(
               text: "Get Started",
               onPressed: (){
-
+                Navigator.pushNamed(context, RoutesName.signUp);
               },
             ),
             const Spacer(),

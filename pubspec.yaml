@@ -39,6 +39,7 @@ dependencies:
   device_preview: ^1.1.0
   fluttertoast: ^8.2.5
   another_flushbar: ^1.12.29
+  curved_navigation_bar: ^1.0.3
 
 dev_dependencies:
   flutter_test:
@@ -73,6 +74,19 @@ flutter:
     - assets/images/button_bg.png
     - assets/images/facebook.png
     - assets/images/google.png
+    - assets/images/ball_icon.png
+    - assets/images/e_home.png
+    - assets/images/e_coaching.png
+    - assets/images/e_streaming.png
+    - assets/images/e_acdemyfilled.png
+    - assets/images/add_post.png
+    - assets/images/navigation_draweer.png
+    - assets/images/drawerheaderImage.png
+    - assets/images/heade_cross_icon.png
+    - assets/images/profile_avtar.png
+    - assets/images/call_icon.png
+    - assets/images/settings_alert.png
+    - assets/images/logout.png
 
 
 

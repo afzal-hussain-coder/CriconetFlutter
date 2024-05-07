@@ -31,7 +31,105 @@ class Strings {
   static const String player ="Player";
   static const String coach ="Coach";
   static const String academy ="Academy";
+  static const String e_Coaching ="e-Coaching";
+  static const String e_Streaming ="e-Streaming";
+  static const String e_Academy ="e-Academy";
+  static const String e_Pavilion ="e-Pavilion";
+  static const String super_6 ="Super 6";
+  static const String teams ="Teams";
+  static const String albums ="Albums";
+  static const String my_blog ="My Blogs";
+  static const String pages ="Pages";
+  static const String saved_posts ="Saved Posts";
 
+
+  //
+  // ListTile(
+  // title: const Center(
+  // child: Text(
+  // Strings.super_6,
+  // style: TextStyle(
+  // fontFamily: "OpenSansFont",
+  // color: AppColors.blueIntroColor,
+  // fontSize: 14,
+  // fontWeight: FontWeight.w700),
+  // )),
+  // onTap: () {
+  // // Update the UI based on the item selected
+  // // Close the drawer
+  // Navigator.pop(context);
+  // },
+  // ),
+  // ListTile(
+  // title: const Center(
+  // child: Text(Strings.teams,
+  // style: TextStyle(
+  // fontFamily: "OpenSansFont",
+  // color: AppColors.blueIntroColor,
+  // fontSize: 14,
+  // fontWeight: FontWeight.w700))),
+  // onTap: () {
+  // // Update the UI based on the item selected
+  // // Close the drawer
+  // Navigator.pop(context);
+  // },
+  // ),
+  // ListTile(
+  // title: const Center(
+  // child: Text(Strings.albums,
+  // style: TextStyle(
+  // fontFamily: "OpenSansFont",
+  // color: AppColors.blueIntroColor,
+  // fontSize: 14,
+  // fontWeight: FontWeight.w700))),
+  // onTap: () {
+  // // Update the UI based on the item selected
+  // // Close the drawer
+  // Navigator.pop(context);
+  // },
+  // ),
+  // ListTile(
+  // title: const Center(
+  // child: Text(Strings.my_blog,
+  // style: TextStyle(
+  // fontFamily: "OpenSansFont",
+  // color: AppColors.blueIntroColor,
+  // fontSize: 14,
+  // fontWeight: FontWeight.w700))),
+  // onTap: () {
+  // // Update the UI based on the item selected
+  // // Close the drawer
+  // Navigator.pop(context);
+  // },
+  // ),
+  // ListTile(
+  // title: const Center(
+  // child: Text(Strings.pages,
+  // style: TextStyle(
+  // fontFamily: "OpenSansFont",
+  // color: AppColors.blueIntroColor,
+  // fontSize: 14,
+  // fontWeight: FontWeight.w700))),
+  // onTap: () {
+  // // Update the UI based on the item selected
+  // // Close the drawer
+  // Navigator.pop(context);
+  // },
+  // ),
+  // ListTile(
+  // title: const Center(
+  // child: Text(Strings.saved_posts,
+  // style: TextStyle(
+  // fontFamily: "OpenSansFont",
+  // color: AppColors.blueIntroColor,
+  // fontSize: 14,
+  // fontWeight: FontWeight.w700))),
+  // onTap: () {
+  // // Update the UI based on the item selected
+  // // Close the drawer
+  // Navigator.pop(context);
+  // },
+  // ),
 
 
 

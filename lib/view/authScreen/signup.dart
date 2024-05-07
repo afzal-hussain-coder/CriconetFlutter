@@ -571,6 +571,8 @@ class _signUpViewState extends State<SignUpView> {
                   RoundedButton(
                     text: Strings.register,
                     onPressed: () {
+
+                      Navigator.pushNamed(context, RoutesName.selectPlayer);
                       if (_emailTextController.text.isEmpty) {
                         Utils.flushBarErrorMessage(
                             "Email can't be empty!", context);

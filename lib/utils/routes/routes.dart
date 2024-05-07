@@ -1,4 +1,7 @@
 import 'package:criconet/utils/routes/routes_name.dart';
+import 'package:criconet/view/Screen/ecoaching.dart';
+import 'package:criconet/view/Screen/homeview.dart';
+import 'package:criconet/view/Screen/mainview.dart';
 import 'package:criconet/view/authScreen/forgot.dart';
 import 'package:criconet/view/authScreen/loginScreen.dart';
 import 'package:criconet/view/authScreen/selectplayer.dart';
@@ -14,12 +17,12 @@ class Routes {
       case RoutesName.splash:
         return MaterialPageRoute(builder: (context) => SplashView());
 
-    case RoutesName.signUp:
-      return PageTransition(
-        child: const SignUpView(),
-        type: PageTransitionType.bottomToTop,
-        settings: settings,
-      );
+      case RoutesName.signUp:
+        return PageTransition(
+          child: const SignUpView(),
+          type: PageTransitionType.bottomToTop,
+          settings: settings,
+        );
 
       case RoutesName.login:
         return PageTransition(
@@ -36,6 +39,24 @@ class Routes {
       case RoutesName.selectPlayer:
         return PageTransition(
           child: SelectPlayerView(),
+          type: PageTransitionType.bottomToTop,
+          settings: settings,
+        );
+      case RoutesName.mainView:
+        return PageTransition(
+          child: MainView(),
+          type: PageTransitionType.bottomToTop,
+          settings: settings,
+        );
+      case RoutesName.homeView:
+        return PageTransition(
+          child: HomeView(),
+          type: PageTransitionType.bottomToTop,
+          settings: settings,
+        );
+      case RoutesName.coachingView:
+        return PageTransition(
+          child: CoachingView(),
           type: PageTransitionType.bottomToTop,
           settings: settings,
         );

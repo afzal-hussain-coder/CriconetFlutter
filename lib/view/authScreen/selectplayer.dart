@@ -2,6 +2,7 @@ import 'package:criconet/res/app_color.dart';
 import 'package:criconet/res/components/playerbutton.dart';
 import 'package:criconet/res/components/roundedbutton.dart';
 import 'package:criconet/res/string.dart';
+import 'package:criconet/utils/routes/routes_name.dart';
 import 'package:flutter/material.dart';
 
 class SelectPlayerView extends StatefulWidget {
@@ -54,21 +55,21 @@ class _SelectPlayerViewState extends State<SelectPlayerView> {
                   PlayerButton(
                     text: Strings.player,
                     onPressed: () {
-                      //Navigator.pushNamed(context, RoutesName.signUp);
+                      Navigator.pushNamed(context, RoutesName.mainView);
                     },
                   ),
                   const SizedBox(height: 30),
                   PlayerButton(
                     text: Strings.coach,
                     onPressed: () {
-                      //Navigator.pushNamed(context, RoutesName.signUp);
+                      Navigator.pushNamed(context, RoutesName.mainView);
                     },
                   ),
                   const SizedBox(height: 30),
                   PlayerButton(
                     text: Strings.academy,
                     onPressed: () {
-                      //Navigator.pushNamed(context, RoutesName.signUp);
+                      Navigator.pushNamed(context, RoutesName.mainView);
                     },
                   ),
                   const SizedBox(height: 30),

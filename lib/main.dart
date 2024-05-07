@@ -28,6 +28,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primaryColor),
         useMaterial3: true,
+        appBarTheme: const AppBarTheme(
+          iconTheme: IconThemeData(
+            color: AppColors.primaryColor, // Change this to the desired color
+          ),
+        ),
       ),
       initialRoute: RoutesName.splash,
       onGenerateRoute: Routes.generateRoute,

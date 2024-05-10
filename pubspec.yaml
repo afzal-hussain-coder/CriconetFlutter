@@ -87,6 +87,14 @@ flutter:
     - assets/images/call_icon.png
     - assets/images/settings_alert.png
     - assets/images/logout.png
+    - assets/images/facebook1.png
+    - assets/images/Insta.png
+    - assets/images/linkend.png
+    - assets/images/Youtube.png
+    - assets/images/emoji_ball.png
+    - assets/images/video_icon.png
+    - assets/images/album_icon.png
+    - assets/images/spinner_arrow.png
 
 
 
@@ -102,28 +110,28 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-     - family: InterFont
-       fonts:
-         - asset: assets/fonts/inter_font.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-     - family: OpenSansFont
-       fonts:
-         - asset: assets/fonts/opensans_regular.ttf
-         - asset: assets/fonts/opensans_bold.ttf
-           weight: 700
-         - asset: assets/fonts/opensans_semibold.ttf
-           weight: 600
+    - family: InterFont
+      fonts:
+        - asset: assets/fonts/inter_font.ttf
+    #       - asset: fonts/Schyler-Italic.ttf
+    #         style: italic
+    - family: OpenSansFont
+      fonts:
+        - asset: assets/fonts/opensans_regular.ttf
+        - asset: assets/fonts/opensans_bold.ttf
+          weight: 700
+        - asset: assets/fonts/opensans_semibold.ttf
+          weight: 600
 
-     - family: PaytoneFont
-       fonts:
-         - asset: assets/fonts/paytoneone_regular.ttf
+    - family: PaytoneFont
+      fonts:
+        - asset: assets/fonts/paytoneone_regular.ttf
 
-     - family: PoppinsFont
-       fonts:
-         - asset: assets/fonts/poppins_regular.ttf
-         - asset: assets/fonts/poppins_semibold.ttf
-           weight : 600
+    - family: PoppinsFont
+      fonts:
+        - asset: assets/fonts/poppins_regular.ttf
+        - asset: assets/fonts/poppins_semibold.ttf
+          weight: 600
 
 
   #

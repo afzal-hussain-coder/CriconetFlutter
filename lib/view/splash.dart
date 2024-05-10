@@ -2,25 +2,26 @@ import 'package:criconet/res/app_color.dart';
 import 'package:criconet/view/IntroScreen/intoscreen.dart';
 import 'package:flutter/material.dart';
 
-class SplashView extends StatefulWidget{
+class SplashView extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => _splashViewState();
-
 }
 
-class _splashViewState extends State<SplashView>{
-
+class _splashViewState extends State<SplashView> {
   @override
   void initState() {
     super.initState();
 
-    Future.delayed(const Duration(seconds: 5),() {
-      Navigator.of(context).pushReplacement(
-        MaterialPageRoute(
-          builder: (_) => OnboardingPage(),
-        ),
-      );
-    },);
+    Future.delayed(
+      const Duration(seconds: 5),
+      () {
+        Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+            builder: (_) => OnboardingPage(),
+          ),
+        );
+      },
+    );
   }
 
   @override
@@ -40,9 +41,13 @@ class _splashViewState extends State<SplashView>{
             end: Alignment.centerRight,
           ),
         ),
-        child: Center(child: Image.asset("assets/images/splash.png")),
+        child: Image.asset(
+          "assets/images/splash.png",
+          width: double.infinity,
+          height: double.infinity,
+          fit: BoxFit.fill,
+        ),
       ),
     );
   }
-
 }

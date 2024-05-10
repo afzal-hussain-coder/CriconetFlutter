@@ -41,8 +41,8 @@ class _stateStreamingView extends State<StreamingView> {
         ],
       ),
       endDrawer: SizedBox(
-        width: double.infinity,
         height: double.infinity,
+        width: double.infinity,
         child: Drawer(
             shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.only(
@@ -51,25 +51,90 @@ class _stateStreamingView extends State<StreamingView> {
                   bottomLeft: Radius.circular(0),
                   topLeft: Radius.circular(0)),
             ),
-            child: Stack(
-              children: [
-                Positioned(
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  height: MediaQuery.of(context).size.height / 2,
+            child: Column(children: <Widget>[
+              Expanded(
+                flex: 4,
+                child: Container(
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/background_theme.png'),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  child: ListView(
+                    padding: EdgeInsets.zero,
+                    children: <Widget>[
+                      DrawerHeaderView(
+                        onPressed: () {
+                          _scaffoldKey.currentState!.closeEndDrawer();
+                        },
+                      ),
+                      ListTile(
+                        title: const Center(
+                            child: Text(
+                          Strings.view_live_matches,
+                          style: TextStyle(
+                              fontFamily: "OpenSansFont",
+                              color: AppColors.blueIntroColor,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w700),
+                        )),
+                        onTap: () {
+                          // Update the UI based on the item selected
+                          // Close the drawer
+                          Navigator.pop(context);
+                        },
+                      ),
+                      ListTile(
+                        title: const Center(
+                            child: Text(Strings.view_archives,
+                                style: TextStyle(
+                                    fontFamily: "OpenSansFont",
+                                    color: AppColors.blueIntroColor,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w700))),
+                        onTap: () {
+                          // Update the UI based on the item selected
+                          // Close the drawer
+                          Navigator.pop(context);
+                        },
+                      ),
+                      ListTile(
+                        title: const Center(
+                            child: Text(Strings.book_live_streaming,
+                                style: TextStyle(
+                                    fontFamily: "OpenSansFont",
+                                    color: AppColors.blueIntroColor,
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w700))),
+                        onTap: () {
+                          // Update the UI based on the item selected
+                          // Close the drawer
+                          Navigator.pop(context);
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              // ),
+              Expanded(
+                  flex: 5,
                   child: Container(
-                    color: Colors.blue,
+                    color: AppColors.blueIntroColor,
                     child: ListView(
                       padding: EdgeInsets.zero,
                       children: <Widget>[
-                        DrawerHeaderView(
-                          onPressed: () {
-                            _scaffoldKey.currentState!.closeEndDrawer();
-                          },
-                        ),
                         ListTile(
-                          title: const Text('Item 1'),
+                          title: const Center(
+                              child: Text(
+                            Strings.about_Us,
+                            style: TextStyle(
+                                fontFamily: "OpenSansFont",
+                                color: AppColors.whiteColor,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w700),
+                          )),
                           onTap: () {
                             // Update the UI based on the item selected
                             // Close the drawer
@@ -77,31 +142,186 @@ class _stateStreamingView extends State<StreamingView> {
                           },
                         ),
                         ListTile(
-                          title: const Text('Item 2'),
+                          title: const Center(
+                              child: Text(Strings.partner_with_us,
+                                  style: TextStyle(
+                                      fontFamily: "OpenSansFont",
+                                      color: AppColors.whiteColor,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w700))),
                           onTap: () {
                             // Update the UI based on the item selected
                             // Close the drawer
                             Navigator.pop(context);
                           },
                         ),
+                        ListTile(
+                          title: const Center(
+                              child: Text(Strings.campus_ambassador,
+                                  style: TextStyle(
+                                      fontFamily: "OpenSansFont",
+                                      color: AppColors.whiteColor,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w700))),
+                          onTap: () {
+                            // Update the UI based on the item selected
+                            // Close the drawer
+                            Navigator.pop(context);
+                          },
+                        ),
+                        ListTile(
+                          title: const Center(
+                              child: Text(Strings.blog,
+                                  style: TextStyle(
+                                      fontFamily: "OpenSansFont",
+                                      color: AppColors.whiteColor,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w700))),
+                          onTap: () {
+                            // Update the UI based on the item selected
+                            // Close the drawer
+                            Navigator.pop(context);
+                          },
+                        ),
+                        ListTile(
+                          title: const Center(
+                              child: Text(Strings.careers,
+                                  style: TextStyle(
+                                      fontFamily: "OpenSansFont",
+                                      color: AppColors.whiteColor,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w700))),
+                          onTap: () {
+                            // Update the UI based on the item selected
+                            // Close the drawer
+                            Navigator.pop(context);
+                          },
+                        ),
+                        ListTile(
+                          title: const Center(
+                              child: Text(Strings.faqs,
+                                  style: TextStyle(
+                                      fontFamily: "OpenSansFont",
+                                      color: AppColors.whiteColor,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w700))),
+                          onTap: () {
+                            // Update the UI based on the item selected
+                            // Close the drawer
+                            Navigator.pop(context);
+                          },
+                        ),
+                        ListTile(
+                          title: const Center(
+                              child: Text(Strings.media_release,
+                                  style: TextStyle(
+                                      fontFamily: "OpenSansFont",
+                                      color: AppColors.whiteColor,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w700))),
+                          onTap: () {
+                            // Update the UI based on the item selected
+                            // Close the drawer
+                            Navigator.pop(context);
+                          },
+                        ),
+                        ListTile(
+                          title: const Center(
+                              child: Text(Strings.notice_board,
+                                  style: TextStyle(
+                                      fontFamily: "OpenSansFont",
+                                      color: AppColors.whiteColor,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w700))),
+                          onTap: () {
+                            // Update the UI based on the item selected
+                            // Close the drawer
+                            Navigator.pop(context);
+                          },
+                        ),
+                        const SizedBox(
+                          height: 40,
+                        ),
+                        const Center(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(Strings.user_agreement,
+                                  style: TextStyle(
+                                      fontFamily: "OpenSansFont",
+                                      color: AppColors.whiteColor,
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w200)),
+                              SizedBox(
+                                height: 14, // Height of the vertical line
+                                child: VerticalDivider(
+                                  color: AppColors.whiteColor,
+                                  // Color of the vertical line
+                                  thickness:
+                                      1, // Thickness of the vertical line
+                                ),
+                              ),
+                              Text(Strings.terms_of_use,
+                                  style: TextStyle(
+                                      fontFamily: "OpenSansFont",
+                                      color: AppColors.whiteColor,
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w200)),
+                              SizedBox(
+                                height: 14, // Height of the vertical line
+                                child: VerticalDivider(
+                                  color: AppColors.whiteColor,
+                                  // Color of the vertical line
+                                  thickness:
+                                      1, // Thickness of the vertical line
+                                ),
+                              ),
+                              Text(Strings.privacy_policy,
+                                  style: TextStyle(
+                                      fontFamily: "OpenSansFont",
+                                      color: AppColors.whiteColor,
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w200))
+                            ],
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        const Center(
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image(
+                                  image: AssetImage(
+                                      "assets/images/facebook1.png")),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Image(
+                                  image: AssetImage("assets/images/Insta.png")),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Image(
+                                  image:
+                                      AssetImage("assets/images/Youtube.png")),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Image(
+                                  image:
+                                      AssetImage("assets/images/linkend.png")),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 150,
+                        )
                       ],
-                    ), // First part color
-                    // Your first part content here
-                  ),
-                ),
-                Positioned(
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  height: MediaQuery.of(context).size.height / 2,
-                  child: Container(
-                    color: Colors.green, // Second part color
-                    // Your second part content here
-                  ),
-                ),
-              ],
-            )
-        ),
+                    ),
+                  )),
+            ])),
       ),
       body: const Center(
         child: Text('Main Content'),
